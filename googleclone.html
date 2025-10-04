@@ -200,7 +200,6 @@
         width: 90%;
         height: 35px;
     }
-
     .search-bar i {
         font-size: 14px;
     }
@@ -208,36 +207,29 @@
         height: 30px;
         font-size: 12px;
     }
-
     .google-search-btn {
         width: 100px;
     }
-    
     .lucky-search-btn {
         width: 120px;
     }
     .language {
         font-size: 12px;
     }
-
     footer {
         height: 150px;
     }
-
     .upper-footer {
         height: 50px;
     }
-
     .lower-footer {
         height: 100px;
         flex-direction: column;
     }
-
     .lower-left-footer {
         flex-wrap: wrap;
     }
 }
-
 </style>
 </head>
 <body>
@@ -263,23 +255,19 @@
             </ul>
         </nav> 
     </header>
-
     <section class="content-section">
         <div class="content-wrapper">
             <img class="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-            
             <div class="search-bar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="search-input" class="search-input">
                 <i class="fa-solid fa-keyboard"></i>
                 <i class="fa-solid fa-microphone"></i>
             </div>
-
             <div class="search-buttons">
                 <button class="google-search-btn">Google Search</button>
                 <button class="lucky-search-btn">I'm Feeling Lucky</button>
             </div>
-
             <div class="language">
                 <p>Google offered in: 
                     <a href="">हिन्दी</a>
@@ -295,7 +283,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="upper-footer">
             <p>India</p>
@@ -314,7 +301,6 @@
             </ul>
         </div>
     </footer>
-
     <script>
         const searchInput = document.querySelector(".search-input");
 
@@ -323,12 +309,11 @@
                 search();
             }
         });
-
         function search() {
             const input = searchInput.value;
             window.location.href = "https://www.google.com/search?q=" + input;
         }
     </script>
 </body>
-
 </html>
+
