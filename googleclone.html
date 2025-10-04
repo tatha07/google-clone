@@ -180,21 +180,63 @@
     .lower-footer ul li a:hover{
         text-decoration: underline;
     }
-    @media only screen and (max-width: 650px){
-        .search-bar{
-            width:90%;
-        }
-        .footer{
-            height: 150px;
-        }
-        .upper-footer{
-            height: 50px;
-        }
-        .lower-footer{
-            flex-direction: column;
-            height: 100px;
-        }
+  @media only screen and (max-width: 650px) {
+
+    .navbar ul {
+        font-size: 10px;
     }
+    .menu-icon,
+    .user-icon span {
+        font-size: 14px;
+    }
+    .circle-shadow {
+        height: 30px;
+        width: 30px;
+    }
+    .logo-img {
+        width: 200px;
+    }
+    .search-bar {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i {
+        font-size: 14px;
+    }
+    .search-btns button {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .google-search-btn {
+        width: 100px;
+    }
+    
+    .lucky-search-btn {
+        width: 120px;
+    }
+    .language {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .upper-footer {
+        height: 50px;
+    }
+
+    .lower-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .lower-left-footer {
+        flex-wrap: wrap;
+    }
+}
 
 </style>
 </head>
@@ -288,4 +330,5 @@
         }
     </script>
 </body>
+
 </html>
