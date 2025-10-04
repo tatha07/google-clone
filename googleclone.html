@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <script src="https://kit.fontawesome.com/2ae227c0a5.js" crossorigin="anonymous"></script>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    li{ 
+        list-style-type:none;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 60px;
+    }
+    .navbar{
+        height: 100%;
+        width:100%;
+        padding: 10px 20px;
+    }
+    .navbar ul{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 14px;
+    }
+    .navbar ul li{
+        margin-left: 15px;
+    }
+    .navbar ul li a{
+        color: black
+    }
+    .link:hover{
+        text-decoration: underline;
+    }
+    .circleshadow{    
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circleshadow:hover{
+        background-color: rgba(0,0,0,0.1);
+    }
+    .menu-icon{
+        font-size: 18px;
+        color: #5f6368;
+    }
+    .user-icon span{
+        font-size: 18px;
+        color: white
+    }
+    .user-icon{
+        background-color: #910bff ;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+    }
+    .content-section{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px; 
+    }
+    .logo-img{
+        width: 272px;
+        margin-bottom: 28px;
+    }
+    .search-bar{
+        border: 1px solid #dfe1e5;
+        width: 580px;
+        height: 46px;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .search-bar:hover{
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        border-color: rgba(223,225,229,0);
+    }
+    .search-bar i {
+        font-size: 16px;
+        color: #9aa0a6;
+        margin: 0 8px;
+        cursor: pointer;
+    }
+    .search-bar input{
+        flex-grow: 1;
+        height: 34px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        margin-right: 8px;
+    }
+    .search-buttons{
+        margin-top: 28px;
+    }
+    .search-buttons button{
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-size: 14px;
+        margin: 0 4px;
+        padding: 0 16px;
+        height: 36px;
+        cursor: pointer;
+    }
+    .search-buttons button:hover{
+        border: 1px solid #dadce0;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    }
+    .google-search-btn{
+        width: 130px;
+    }
+    .lucky-search-btn{
+        width: 150px;
+    }
+    .language {
+        margin-top: 25px;
+        font-size: 13px;
+    }
+    .language a{
+        color: #1a0dab;
+        margin: 0 5px;
+    }
+    .language a:hover{
+        text-decoration: underline;
+    }
+    footer{
+        background: #f2f2f2;
+        font-size: 14px;
+        color: #70757a;
+    }
+    .upper-footer{
+        padding: 15px 30px;
+        border-bottom: 1px solid #dadce0;
+    }
+    .lower-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    .lower-footer ul{
+        display: flex;
+    }
+    .lower-footer ul li a{
+        color: #70757a;
+        margin-right: 25px;
+    }
+    .lower-footer ul li a:hover{
+        text-decoration: underline;
+    }
+    @media only screen and (max-width: 650px){
+        .search-bar{
+            width:90%;
+        }
+        .footer{
+            height: 150px;
+        }
+        .upper-footer{
+            height: 50px;
+        }
+        .lower-footer{
+            flex-direction: column;
+            height: 100px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="link" href="">Gmail</a>
+                </li>
+                <li>
+                    <a class="link" href="">Images</a>
+                </li>
+                <li>
+                    <div class="circleshadow">
+                        <a class="menu-icon" href=""><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </li>  
+                <li>
+                    <div class="circleshadow">
+                        <a class="user-icon" href=""><span>T</span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+    <section class="content-section">
+        <div class="content-wrapper">
+            <img class="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" class="search-input">
+                <i class="fa-solid fa-keyboard"></i>
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+            <div class="search-buttons">
+                <button class="google-search-btn">Google Search</button>
+                <button class="lucky-search-btn">I'm Feeling Lucky</button>
+            </div>
+
+            <div class="language">
+                <p>Google offered in: 
+                    <a href="">हिन्दी</a>
+                    <a href="">বাংলা</a>
+                    <a href="">తెలుగు</a>
+                    <a href="">मराठी</a>
+                    <a href="">தமிழ்</a>
+                    <a href="">ગુજરાતી</a>
+                    <a href="">ಕನ್ನಡ</a>
+                    <a href="">മലയാളം</a>
+                    <a href="">ਪੰਜਾਬੀ</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="upper-footer">
+            <p>India</p>
+        </div>
+        <div class="lower-footer">
+            <ul>
+                <li><a href="">About</a></li>   
+                <li><a href="">Advertising</a></li>   
+                <li><a href="">Business</a></li>   
+                <li><a href="">How Search works</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>   
+                <li><a href="">Settings</a></li> 
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const searchInput = document.querySelector(".search-input");
+
+        searchInput.addEventListener("keydown", function(event){
+            if(event.code === "Enter"){
+                search();
+            }
+        });
+
+        function search() {
+            const input = searchInput.value;
+            window.location.href = "https://www.google.com/search?q=" + input;
+        }
+    </script>
+</body>
+</html>
